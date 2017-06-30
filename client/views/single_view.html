@@ -1,18 +1,13 @@
 <div class="input-div">
     <select name="userSelect" ng-model="selectUserId">
-        <option value="">- Please Choose -</option>
-        <option value="1">Josh</option>
-        <option value="2">Sandy</option>
-        <option value="3">Ariana</option>
-        <option value="4">Cory</option>
-        <option value="5">Morty</option>
+        <option value="">{{ chirp.userName }}</option>
     </select>
     <textarea placeholder="{{ chirp.message }}" cols="20" rows="3" ng-model="newMessage"></textarea>
     <button class="fancy-button" ng-click="updateChirp()">Update Chirp</button>
 </div>
 <div class="chirp">
-    <h1>{{ chirp.userName }}</h1>
-    <h3>{{ chirp.message }}</h3>
+    <p>{{ chirp.message }}</p>
+    <h2>{{ chirp.userName }}</h2>
     <h5>{{ chirp.timestamp | date:'short' }}</h5>
     <button class="fancy-button red" ng-click="deleteChirp()">Delete</button>
 </div>

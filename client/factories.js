@@ -5,4 +5,7 @@ angular.module('chirpApp.factories', [])
             method: 'PUT'
         }
     });
-}]);
+}])
+.factory('User', ['$resource', function($resource) {
+    return $resource('/api/users/:id');
+}])

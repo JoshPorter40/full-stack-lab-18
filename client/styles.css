@@ -1,0 +1,81 @@
+body {
+    background-color: #561E18;
+    }
+
+.input-div {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    height: 4em;
+    margin: 0 auto;
+    text-align: center;
+    border: 1em solid #212027;
+    line-height: 4em;
+    vertical-align: middle;
+}
+
+.chirp-list {
+    background-color: #8d2f23;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1em solid #212027;}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.chirp {
+    border-bottom: 1px solid #212027;
+    padding: 2em 1em;
+    position: relative;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.chirp p {
+    margin-top: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.chirp h5 {
+    margin-bottom: 0;
+    text-decoration: none;
+    text-align: center;
+}
+.chirp h2 {
+    text-decoration: none;
+    text-align: center;
+}
+
+.fancy-button {
+    background-color: transparent;
+    border: 1px solid #212027;
+    color: #f22f08;
+    border-radius: 0.5em;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 0
+}
+
+.greeter {
+    color: #594346;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: #8d2f23;
+    width: 100%;
+    max-width: 500px;
+    height: 4em;
+    margin: 0 auto;
+    text-align: center;
+    border: 1em solid #212027;
+    line-height: 4em;
+    vertical-align: middle;
+}
+
+#edit-link {
+    text-align: right;
+    color: white;
+}

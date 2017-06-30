@@ -8,13 +8,13 @@
         <option value="5">Morty</option>
     </select>
     <textarea placeholder="Enter New Chirp!" cols="20" rows="3" ng-model="newMessage"></textarea>
-    <button class="fancy-button" ng-click="createChirp()">Post a Chirp</button>
+    <button class="fancy-button" id="chirp-btn" ng-click="createChirp()">Post a Chirp</button>
 </div>
 <div class="chirp-list">
     <div class="chirp" ng-repeat="c in chirps">
-        <h1>{{ c.userName }}</h1>
-        <h3>{{ c.message }}</h3>
+        <p>{{ c.message }}</p>
+        <h2>{{ c.userName }}</h2>
         <h5>{{ c.timestamp | date:'short' }}</h5>
-        <a ng-href="/list/{{ c.id }}">Edit</a>
+        <a id="edit-link" ng-href="/list/{{ c.id }}">Edit</a>
     </div>
 </div>

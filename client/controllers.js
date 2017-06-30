@@ -7,15 +7,15 @@ angular.module('chirpApp.controllers', [])  //this creates the module
 
     $scope.createChirp  = function() {
         var c = new Chirp({
-            userId: $scope.selectUserId,
             message: $scope.newMessage,
+            userId: $scope.selectUserId,
             date: $scope.newDate
         });
         c.$save(function(success) {
             alert('Chirp Sent!');
             $scope.chirps = Chirp.query();
-            $scope.newUser = '';
             $scope.newMessage = '';
+            $scope.newUser = '';
             $scope.newDate = '';
         }, function(err) {
             console.log(err);
