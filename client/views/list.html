@@ -1,0 +1,20 @@
+<div class="input-div">
+    <select name="userSelect" ng-model="selectUserId">
+        <option value="">- Please Choose -</option>
+        <option value="1">Josh</option>
+        <option value="2">Sandy</option>
+        <option value="3">Ariana</option>
+        <option value="4">Cory</option>
+        <option value="5">Morty</option>
+    </select>
+    <textarea placeholder="Enter New Chirp!" cols="20" rows="3" ng-model="newMessage"></textarea>
+    <button class="fancy-button" ng-click="createChirp()">Post a Chirp</button>
+</div>
+<div class="chirp-list">
+    <div class="chirp" ng-repeat="c in chirps">
+        <h1>{{ c.userName }}</h1>
+        <h3>{{ c.message }}</h3>
+        <h5>{{ c.timestamp | date:'short' }}</h5>
+        <a ng-href="/list/{{ c.id }}">Edit</a>
+    </div>
+</div>
